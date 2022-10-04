@@ -547,18 +547,18 @@ public class Bot extends Thread{
 							} catch (Exception e) {}
 						});
 					}
-					else if(user.work.compareTo("map") == 0) {
-						mainThread = new MatrixMan(mainThread, this);
-					}
-					else if(user.work.compareTo("lumberer") == 0) {
-						mainThread = new Lumberer(mainThread, this);
-					}
-					else if(user.work.compareTo("carrot") == 0) {
-						mainThread = new CarrotsBot(mainThread,this);
-					}
-					else if(user.work.compareTo("work") == 0) {
-						mainThread = new WorkBot(mainThread,this);
-					}
+					//else if(user.work.compareTo("map") == 0) {
+					//	mainThread = new MatrixMan(mainThread, this);
+					//}
+					//else if(user.work.compareTo("lumberer") == 0) {
+					//	mainThread = new Lumberer(mainThread, this);
+					//}
+					//else if(user.work.compareTo("carrot") == 0) {
+					//	mainThread = new CarrotsBot(mainThread,this);
+					//}
+					//else if(user.work.compareTo("work") == 0) {
+					//	mainThread = new WorkBot(mainThread,this);
+					//}
 					ret = prevPlay(link);
 					if(this.isInterrupted()) {
 						net.close();
